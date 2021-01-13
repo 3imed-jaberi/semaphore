@@ -1,26 +1,19 @@
 {
   "name": "semaphore",
   "version": "0.1.0",
-  "description": "Semaphore implementation with promise support.",
+  "description": "Semaphore implementation.",
   "main": "index.js",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/3imed-jaberi/koa-better-response-handler.git"
+    "url": "git+https://github.com/3imed-jaberi/semaphore.git"
   },
   "scripts": {
-    "lint": "eslint .",
-    "pretest": "npm run lint",
-    "test": "mocha index.spec.js --exit",
-    "precoverage": "rimraf .nyc_output coverage",
-    "coverage": "nyc npm run test",
-    "ci": "npm run coverage"
+    "lint": "standard",
+    "example": "node example.js"
   },
   "keywords": [
-    "koa",
-    "middleware",
-    "response-handler",
-    "koa-response-handler"
+    "semaphore"
   ],
   "author": {
     "name": "imed jaberi",
@@ -32,18 +25,13 @@
     "fastq": "^1.10.0"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1"
+    "standard": "^16.0.3"
   },
   "enignes": {
     "node": ">= 12"
   },
   "bugs": {
-    "url": "https://github.com/3imed-jaberi/koa-better-response-handler/issues"
+    "url": "https://github.com/3imed-jaberi/semaphore/issues"
   },
-  "homepage": "https://github.com/3imed-jaberi/koa-better-response-handler#readme"
+  "homepage": "https://github.com/3imed-jaberi/semaphore#readme"
 }
